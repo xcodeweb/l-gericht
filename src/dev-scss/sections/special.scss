@@ -1,0 +1,61 @@
+.special {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__title,
+  &__subtitle {
+    display: block;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-family: "Cormorant Upright";
+  }
+
+  &__item {
+    padding-top: 32px;
+    padding-bottom: 69px;
+  }
+
+  &__item-title {
+    margin-bottom: 48px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 45px;
+    line-height: 130%;
+    letter-spacing: 0.04px;
+  }
+
+  &__item-row {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 76px;
+    }
+
+    div {
+      margin-left: 32px;
+      margin-right: 32px;
+      width: 119px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+
+  &__item-name {
+    width: 192px;
+    color: #dcca87;
+  }
+
+  &__item-price {
+    color: #fff;
+  }
+
+  &__image {
+    height: 659px;
+  }
+}

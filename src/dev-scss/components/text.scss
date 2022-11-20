@@ -62,6 +62,13 @@
   color: #dcca87;
 }
 
+.text-fw700-23 {
+  @extend %title-template;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
 .input {
   font-family: "Cormorant Upright";
   font-style: normal;
