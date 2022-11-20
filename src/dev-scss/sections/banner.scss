@@ -1,0 +1,19 @@
+.banner {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-image: url("@img/banner/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-size: 128px;
+  }
+}

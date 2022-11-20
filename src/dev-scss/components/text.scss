@@ -18,6 +18,13 @@
   letter-spacing: 0.05px;
 }
 
+.text-fw700-32 {
+  @extend %text-base;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+}
+
 %title-template {
   font-family: "Cormorant Upright";
   font-style: normal;
