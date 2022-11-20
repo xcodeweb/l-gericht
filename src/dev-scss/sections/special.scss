@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     gap: 32px;
+    margin-bottom: 64px;
     font-family: "Cormorant Upright";
   }
 
@@ -30,6 +31,7 @@
   }
 
   &__item-row {
+    position: relative;
     display: flex;
     align-items: center;
 
@@ -49,6 +51,13 @@
   &__item-name {
     width: 192px;
     color: #dcca87;
+  }
+
+  &__item-descr {
+    position: absolute;
+    bottom: -38px;
+    left: 0;
+    color: #aaaaaa;
   }
 
   &__item-price {
