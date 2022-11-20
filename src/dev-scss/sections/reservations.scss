@@ -1,0 +1,55 @@
+.reservations {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1330px;
+  }
+
+  &__selectors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  &__selectors > * {
+    width: 412px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #f5efdb;
+  }
+
+  &__selectors > *:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  &__date,
+  &__time,
+  &__selector {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &__date::-webkit-calendar-picker-indicator,
+  &__time::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  &__date,
+  &__time {
+    background-image: url("@img/sprite/sprite.svg#arrow");
+    background-size: 40px 40px;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }
+}

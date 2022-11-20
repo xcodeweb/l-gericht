@@ -1,0 +1,20 @@
+.decoration {
+  position: relative;
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 146px;
+    height: 146px;
+    animation: decoration 20s infinite linear;
+  }
+}
+
+@keyframes decoration {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

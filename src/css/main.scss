@@ -1,0 +1,25 @@
+@import "../dev-scss/vars";
+@import "../dev-scss/base";
+
+//elements
+@import "../dev-scss/components/nav";
+@import "../dev-scss/components/text";
+@import "../dev-scss/components/decoration";
+@import "../dev-scss/components/button";
+
+//sections
+@import "../dev-scss/sections/header";
+@import "../dev-scss/sections/reservations";
+@import "../dev-scss/sections/about";
+@import "../dev-scss/sections/choosefrom";
+@import "../dev-scss/sections/footer";
+
+//adaptive
+@import "../dev-scss/adaptive";
+
+//adds
+
+.wrapper {
+  color: #fff;
+  background-color: #040404;
+}

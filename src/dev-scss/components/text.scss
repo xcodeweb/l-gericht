@@ -1,0 +1,68 @@
+%text-base {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+  color: #ffffff;
+}
+
+.text-fw400-16 {
+  @extend %text-base;
+  letter-spacing: 0.04px;
+}
+
+.text-fw600-16 {
+  @extend %text-base;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05px;
+}
+
+%title-template {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+}
+
+.title {
+  @extend %title-template;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    height: 9px;
+    transform: translate(-50%, 70%);
+    background-image: url("@img/sprite/sprite.svg#title-icon");
+  }
+}
+
+.subtitle {
+  @extend %title-template;
+  font-weight: 600;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #dcca87;
+}
+
+.input {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #aaaaaa;
+}

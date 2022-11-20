@@ -1,0 +1,27 @@
+<section class="reservations">
+  <div class="reservations__container">
+    <div class="reservations__decor">
+      @@include("dev-html/components/decoration.html", {})
+    </div>
+    <h2 class="reservations__title title">
+      Reservations
+    </h2>
+    <span class="reservations__booking-text subtitle">
+      Book A Table
+    </span>
+    <form class="reservations__form" action="">
+      <fieldset class="reservations__selectors">
+        <select class="reservations__selector input" name="number">
+          <option value="" disabled selected hidden>Select number of persons</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <input class="reservations__date input" type="date" name="date" value="2022-01-01" required>
+        <input class="reservations__time input" type="time" name="time" value="11:00" required>
+      </fieldset>
+      <button class="reservations__button button">Book Now</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,60 @@
+.header {
+  padding-bottom: 50px;
+  background-image: url("@img/header/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  &__register {
+    span {
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+      content: "#Bar #Gericht";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(-90deg) translate(-100%, 0);
+      transform-origin: 0;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 175%;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+    }
+  }
+
+  &__image {
+    border: 1px solid goldenrod;
+  }
+
+  &__name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Cormorant Upright";
+    font-weight: 700;
+    font-size: 181px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+}

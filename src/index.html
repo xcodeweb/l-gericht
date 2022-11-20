@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  @@include("dev-html/head.html", { "title": "Main", "style": "main" })
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    @@include("dev-html/sections/header.html",{})
+
+    <main class="main">
+      @@include("dev-html/sections/reservations.html", {})
+      @@include("dev-html/sections/about.html", {})
+      @@include("dev-html/sections/choosefrom.html", {})
+    </main>
+
+    @@include("dev-html/sections/footer.html",{})
+    <div class="test"></div>
+
+  </div>
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.15);
+    }
+
+    &:hover > .nav__link {
+      text-shadow: 0 20px 5px rgb(255, 255, 255);
+    }
+  }
+
+  &__link {
+    text-shadow: 0 0px 5px rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 32px;
+  }
+}
