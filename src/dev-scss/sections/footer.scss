@@ -1,0 +1,40 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("@img/footer/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    display: block;
+    max-width: 438px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    text-align: center;
+    &::after {
+      bottom: -15px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Cormorant Upright";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #f5efdb;
+  }
+
+  &__address {
+    color: #aaaaaa;
+  }
+}
