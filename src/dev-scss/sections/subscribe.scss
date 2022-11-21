@@ -1,0 +1,42 @@
+.subscribe {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+  }
+
+  &__notation {
+    margin-bottom: 64px;
+    color: #aaaaaa;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__email {
+    flex-basis: 40%;
+    margin-right: 32px;
+    padding: 16px 18px;
+    border: 1px solid #F5EFDB;
+    color: #aaaaaa;
+    background-color: transparent;
+  }
+
+  &__button {
+    margin: 0;
+  }
+}
