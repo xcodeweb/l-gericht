@@ -57,4 +57,14 @@
     letter-spacing: 0.05em;
     white-space: nowrap;
   }
+
+  &__burger {
+    position: relative;
+    z-index: 15;
+    display: none;
+    padding: 10px;
+    border: 2px solid #aaaaaa;
+    border-radius: 15px;
+  }
+
 }

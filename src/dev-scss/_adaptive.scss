@@ -1,0 +1,236 @@
+@media (max-width: 1320px) {
+  // Reservations
+  .reservations {
+    &__form {
+      width: 100%;
+    }
+    input,
+    select {
+      display: block;
+      width: 33%;
+      min-width: 212px;
+    }
+  }
+  // End Reservations
+}
+
+@media (max-width: 1072px) {
+  // Header
+  .header {
+    &__name {
+      font-size: 128px;
+    }
+  }
+  // End Header
+
+  // About
+  .about {
+    &__inner {
+      gap: 0;
+    }
+
+    &__left-content {
+      display: none;
+    }
+
+    &__subtitle {
+      font-size: 48px;
+    }
+  }
+  // End About
+
+  // Special
+  .special {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+  // End Special
+
+  // Contacts
+  .contacts {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__image {
+      margin-left: 20px;
+      margin-right: 20px;
+      &::before,
+      &::after {
+        width: 50%;
+        height: 50%;
+      }
+    }
+  }
+  // End Contacts
+}
+
+@media (max-width: 868px) {
+  // Header
+  .header {
+    // BURGER
+    &__top {
+      position: relative;
+    }
+
+    &__register {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    &__burger {
+      display: block;
+    }
+
+    & .nav.nav--active {
+      top: 100%;
+    }
+
+    .nav {
+      position: absolute;
+      z-index: 10;
+      top: -100%;
+      left: 50%;
+      width: 110%;
+      padding-top: 35px;
+      transition: top 1s ease;
+      transform: translate(-50%, -50%);
+      background-color: #000;
+
+      &__list {
+        flex-direction: column;
+      }
+
+      &__item {
+        margin-right: 0;
+        margin-bottom: 25px;
+        font-size: 32px;
+      }
+    }
+  }
+  // End Header
+}
+
+@media (max-width: 768px) {
+  // Header
+  .header {
+    &__name {
+      font-size: 92px;
+    }
+  }
+  // End Header
+
+  // Reservations
+  .reservations {
+    &__selectors {
+      flex-direction: column;
+
+      & > .reservations__date,
+      & > .reservations__selector,
+      & > .reservations__time {
+        margin-right: 0;
+      }
+    }
+  }
+  // End Reservations
+
+  // Banner
+  .banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__subtitle {
+      font-size: 64px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+  // End Banner
+}
+
+@media (max-width: 540px) {
+  // Header
+  .header {
+    &__name {
+      font-size: 64px;
+    }
+
+    &__register {
+      position: absolute;
+      top: 70%;
+      left: 0;
+    }
+  }
+  // End Header
+}
+
+@media (max-width: 480px) {
+  // Header
+  .header {
+    &__name {
+      font-size: 32px;
+    }
+  }
+  // End Header
+
+  // Contacts
+  .contacts {
+    &__image {
+      &::before,
+      &::after {
+        border-width: 12px;
+      }
+
+      &::before {
+        bottom: -8px;
+        left: -12px;
+      }
+
+      &::after {
+        top: -12px;
+        right: -12px;
+      }
+    }
+  }
+  // End Contacts
+
+  // Special
+  .special {
+    &__item-row {
+      flex-direction: column;
+    }
+
+    &__item-name {
+      text-align: center;
+    }
+
+    &__item-descr {
+      position: static;
+      text-align: center;
+    }
+  }
+  // End Special
+
+  // Subscribe
+  .subscribe {
+    &__form {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__email {
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+  }
+  // End Subscribe
+}
