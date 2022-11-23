@@ -7,6 +7,11 @@
   font-size: 16px;
   line-height: 175%;
   letter-spacing: 0.04em;
+  transition: opacity 0.3s ease;
   background-color: #dcca87;
   color: #0c0c0c;
+
+  &:hover {
+    opacity: 0.85;
+  }
 }

@@ -159,6 +159,11 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+input,
+select {
+  appearance: none;
+}
+
 input::-ms-clear {
   display: none;
 }
