@@ -1,6 +1,6 @@
-https://zcxcode.github.io/rest-rock/
+https://cx-code-web.github.io/rest-rock/
 
-# Верстка макета
+# Верстка
 
 ## Стек
 
