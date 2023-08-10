@@ -3,7 +3,6 @@ import gulpSass from "gulp-sass";
 import gulpLess from "gulp-less";
 import rename from "gulp-rename";
 import cleanCss from "gulp-clean-css";
-import webpcss from "gulp-webpcssfix";
 import autoprefixer from "gulp-autoprefixer";
 import groupQueries from "gulp-group-css-media-queries";
 
@@ -26,12 +25,6 @@ export const scss = () => {
       })
     )
     .pipe(app.plugins.if(app.isBuild, groupQueries()))
-    .pipe(
-      webpcss({
-        webpClass: ".webp",
-        noWebpClass: ".no-webp"
-      })
-    )
     .pipe(
       app.plugins.if(
         app.isBuild,
@@ -67,12 +60,6 @@ export const less = () => {
     )
     .pipe(gulpLess())
     .pipe(app.plugins.if(app.isBuild, groupQueries()))
-    .pipe(
-      webpcss({
-        webpClass: ".webp",
-        noWebpClass: ".no-webp"
-      })
-    )
     .pipe(
       app.plugins.if(
         app.isBuild,
